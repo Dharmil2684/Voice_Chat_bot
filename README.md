@@ -19,7 +19,7 @@
 
 This project is an intelligent Voice Bot designed to simulate a human-like customer support agent. Unlike traditional bots that rely on expensive, high-latency audio processing APIs, this project utilizes a **Hybrid Architecture**:
 1.  **The "Ear" & "Mouth":** Uses the browser's native **Web Speech API** for zero-latency, zero-cost Speech-to-Text and Text-to-Speech.
-2.  **The "Brain":** Uses **Google Gemini 1.5 Flash** (via Node.js) for high-speed, context-aware reasoning.
+2.  **The "Brain":** Uses **Google Gemini 2.5 Flash** (via Node.js) for high-speed, context-aware reasoning.
 
 This approach ensures the application is fast, scalable, and cost-effective.
 
@@ -30,7 +30,7 @@ This approach ensures the application is fast, scalable, and cost-effective.
 ### 🤖 AI & Voice
 * **Real-time Interaction:** Instant voice feedback using browser-native APIs.
 * **Context Aware:** The AI knows the logged-in user's name and maintains conversational context.
-* **Gemini 1.5 Flash:** Leveraging Google's latest model for fast inference.
+* **Gemini 2.5 Flash:** Leveraging Google's latest model for fast inference.
 
 ### 🔐 Security & User Management
 * **JWT Authentication:** Secure stateless authentication using JSON Web Tokens.
@@ -51,7 +51,7 @@ This approach ensures the application is fast, scalable, and cost-effective.
 | **Frontend** | React (Vite), Tailwind CSS, Axios, Recharts, Lucide Icons |
 | **Backend** | Node.js, Express.js |
 | **Database** | MongoDB (Atlas & Local), Mongoose ORM |
-| **AI Model** | Google Gemini 1.5 Flash (`@google/generative-ai`) |
+| **AI Model** | Google Gemini 2.5 Flash (`@google/generative-ai`) |
 | **Auth** | JWT, BcryptJS |
 | **Deployment** | Vercel (Frontend), Render (Backend) |
 
