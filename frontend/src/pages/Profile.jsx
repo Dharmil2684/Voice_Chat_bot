@@ -120,13 +120,6 @@ const Profile = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4 p-3 bg-gray-50 rounded-lg">
-                  <Shield className="text-green-500" size={20} />
-                  <div>
-                    <p className="text-xs text-gray-400 uppercase font-bold">Account ID</p>
-                    <p className="text-gray-700 font-medium text-xs font-mono truncate w-40">{user._id}</p>
-                  </div>
-                </div>
               </div>
             </div>
           )}
