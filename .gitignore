@@ -1,0 +1,31 @@
+# --- Dependencies (Frontend & Backend) ---
+node_modules/
+package-lock.json
+yarn.lock
+
+# --- Environment Variables (CRITICAL: Never commit these!) ---
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# --- Backend Specifics ---
+# Ignore the temporary audio uploads folder
+/backend/uploads/
+# Ignore logs
+*.log
+npm-debug.log*
+logs/
+
+# --- Frontend Specifics (Vite/React) ---
+# Ignore build output folders
+/frontend/dist/
+/frontend/build/
+# Editor directories
+.vscode/
+.idea/
+
+# --- System Files ---
+.DS_Store
+Thumbs.db

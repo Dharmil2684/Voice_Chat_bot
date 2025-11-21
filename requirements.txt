@@ -1,0 +1,2 @@
+express mongoose cors dotenv multer openai
+vite@latest frontend -- --template react
