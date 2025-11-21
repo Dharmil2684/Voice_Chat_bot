@@ -8,7 +8,6 @@
 
 ## 🚀 Live Demo
 - **Frontend (Vercel):** [https://voice-chat-bot-nu.vercel.app](https://voice-chat-bot-nu.vercel.app)
-- **Backend (Render):** [https://voice-chat-bot-mz6s.onrender.com](https://voice-chat-bot-mz6s.onrender.com)
   
 ### 🔐 Demo Credentials
 - **Email:** abc@gmail.com  
