@@ -1,4 +1,4 @@
-# 🎙️ AI Voice Assistant with Analytics Dashboard
+# 🎙️ Voice Chat Bot with Analytics Dashboard
 
 > **A Full-Stack MERN Application** featuring real-time voice interaction, secure authentication, and an admin-level analytics dashboard.
 
