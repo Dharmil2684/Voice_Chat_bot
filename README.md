@@ -4,7 +4,7 @@
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Stack](https://img.shields.io/badge/stack-MERN-green.svg)
-![AI](https://img.shields.io/badge/AI-Gemini%201.5-orange.svg)
+![AI](https://img.shields.io/badge/AI-Gemini%202.5-orange.svg)
 
 ## 🚀 Live Demo
 - **Frontend (Vercel):** [https://voice-chat-bot-nu.vercel.app](https://voice-chat-bot-nu.vercel.app)
