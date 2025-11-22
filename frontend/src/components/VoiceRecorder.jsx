@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Mic, Square, Loader2 } from 'lucide-react';
 
-const VoiceRecorder = ({ onRecordingComplete, isProcessing }) => {
+const VoiceRecorder = ({ onRecordingComplete, isProcessing, onInteraction }) => {
   const [isRecording, setIsRecording] = useState(false);
   const [recognition, setRecognition] = useState(null);
 
@@ -13,7 +13,7 @@ const VoiceRecorder = ({ onRecordingComplete, isProcessing }) => {
 
       recognition.onresult = (event) => {
         const transcript = event.results[0][0].transcript;
-        onRecordingComplete(transcript); // Send text to parent
+        onRecordingComplete(transcript);
         setIsRecording(false);
       };
 
@@ -33,8 +33,12 @@ const VoiceRecorder = ({ onRecordingComplete, isProcessing }) => {
   }, []);
 
   const toggleRecording = () => {
+    // 1. Tell the parent to STOP any current audio immediately
+    if (onInteraction) onInteraction();
+
     if (isRecording) {
       recognition.stop();
+      setIsRecording(false); // Force state update
     } else {
       recognition.start();
       setIsRecording(true);
@@ -66,7 +70,7 @@ const VoiceRecorder = ({ onRecordingComplete, isProcessing }) => {
           ? "Thinking..."
           : isRecording
           ? "Listening... (Speak Now)"
-          : "Tap to Speak (Free Mode)"}
+          : "Tap to Speak"}
       </p>
     </div>
   );
